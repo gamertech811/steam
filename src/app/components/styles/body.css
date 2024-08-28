@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    font-family: "Poppins", sans-serif!important;
+    font-weight: 500;
+    font-style: normal;
+}
+
+body{
+    margin: 0;
+    background-color: #1F3151;
+    color: white;
+}
+
+#steamlogo{
+    width: auto;
+    height: 50px;
+    position: absolute;
+}
+#acoisado{
+    position: relative;
+    cursor: pointer;
+    width: auto;
+    height: 50px;
+    font-size: 2rem;
+    text-decoration: none;
+    color: #171D25;
+    overflow: hidden;
+    padding: 20px 110px;
+    width: 800px;
+    height: 40px;
+}
+
+
+
+
+.pau {
+    margin: 0px 0px 10px 40%;
+    text-align: center ; 
+    text-decoration: none;
+    color: white;
+    height: 50px;
+    width: 200px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+}
+
+.pau:hover{
+    background-color: #1A9FFF;
+}
+#primer {
+    margin: 8% 0px 10px 40%;
+}
+#deb {
+    font-size: 1.5rem;
+}
+#doi{
+    font-size: 1.7rem;
+}
+#dois{
+    font-size: 1.7rem;
+    margin: 8% 0px 10px 40%;
+}
+
+
+
+
+
+p {
+    font-size: 1.1rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.olaa {
+    font-family: Arial, Helvetica, sans-serif;
+}
