@@ -22,6 +22,12 @@ export default function NavBar() {
 
                 <comu>
                     <a href="/">COMUNIDADE</a>
+                    <span id="hoverzinho">
+                        <p className="trecoco">mercado noturno</p>
+                        <p className="trecoco">lei baba</p>
+                        <p className="trecoco">sarrada</p>
+                        <p className="trecoco">kjesuita</p>
+                    </span>
                 </comu>
 
                 <sobre>

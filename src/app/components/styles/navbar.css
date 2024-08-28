@@ -4,7 +4,7 @@ gridnav{
     display: grid;
     grid-template-columns: 230px 1fr;
     background-color: #171D25;
-    padding: 30px 220px;
+    padding: 33px 220px;
 }
 
 nav{
@@ -23,10 +23,6 @@ nav > * > a{
     margin: 0 7px;
 }
 
-/*nav > a:hover{
-    color:#1A9FFF;
-}*/
-
 a:hover{
     color: #1A9FFF;
     text-decoration: underline #1A9FFF 2.7px;
@@ -39,7 +35,6 @@ a:hover + span{
     position: absolute;
     background-color: #3D4450;
     width: 150px;
-    text-align: center;
     display: none;
 }
 #hoverzinho:hover{
@@ -51,7 +46,7 @@ a:hover + span{
     font-size: 0.9rem;
     cursor: pointer;
     margin: 0;
-    padding: 10px 10px;
+    padding: 10px 10px 10px 15px;
 }
 .trecoco:hover{
     color: #3D4450;

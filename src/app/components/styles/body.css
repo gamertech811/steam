@@ -7,7 +7,8 @@
 
 body{
     margin: 0;
-    background-color: #1F3151;
+    background: rgb(24,62,78);
+    background: linear-gradient(90deg, rgba(24,62,78,1) 0%, rgba(29,46,75,1) 66%);
     color: white;
 }
 
@@ -29,6 +30,32 @@ body{
     width: 800px;
     height: 40px;
 }
+
+#align{
+    position: absolute;
+    background: rgb(48,124,190);
+    background: linear-gradient(90deg, rgba(48,124,190,1) 0%, rgba(15,33,110,1) 76%);
+    padding: 10px 10px 10px 15px;
+    left: 22%;
+    margin: 35px 0px 0px 0px;
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+#align > p:hover{
+    background-color: #171D25;
+}
+#align > p{
+    margin: 0;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+
+
+
+
+
 
 
 
