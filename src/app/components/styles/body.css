@@ -14,7 +14,8 @@ body{
 
 #steamlogo{
     width: auto;
-    height: 50px;
+    height: 45px;
+    top: 5%;
     position: absolute;
 }
 #acoisado{
@@ -36,7 +37,7 @@ body{
     background: rgb(48,124,190);
     background: linear-gradient(90deg, rgb(44, 128, 202) 0%, rgba(15,33,110,1) 86%);
     /*padding: 10px 10px 10px 15px;*/
-    left: 20%;
+    left: 22%;
     margin: 35px 0px 0px 0px;
     display: flex;
     justify-content: space-around;

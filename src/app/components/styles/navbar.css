@@ -4,7 +4,7 @@ gridnav{
     display: grid;
     grid-template-columns: 230px 1fr;
     background-color: #171D25;
-    padding: 33px 220px;
+    padding: 33px 240px;
 }
 
 nav{
