@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+gridnav{
+    display: grid;
+    grid-template-columns: 230px 1fr;
+    background-color: #171D25;
+    padding: 33px 220px;
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+gridnav > h1{
+    margin: 0;
+    color: white;
+}
+nav > * > a{
+    text-decoration: none;
+    color: white;
+    margin: 0 7px;
+}
+
+a:hover{
+    color: #1A9FFF;
+    text-decoration: underline #1A9FFF 2.7px;
+}
+
+a:hover + span{
+    display: block!important;
+}
+#hoverzinho{
+    position: absolute;
+    background-color: #3D4450;
+    width: 150px;
+    display: none;
+    z-index: 1;
+}
+#hoverzinho:hover{
+    display: block;
+}
+
+
+.trecoco{
+    font-size: 0.9rem;
+    cursor: pointer;
+    margin: 0;
+    padding: 10px 10px 10px 15px;
+}
+.trecoco:hover{
+    color: #3D4450;
+    background-color: white;
+}
+#flexcaixa{
+    display: flex;
+    justify-content: flex-start;
+}
