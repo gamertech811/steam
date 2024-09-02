@@ -4,9 +4,8 @@ export default function NavBar() {
   return (
     <gridnav>
       <span>
-        <img src="/steam.png" id="steamlogo"></img>
-        <a href="/" id="acoisado">
-          ‎{" "}
+        <a href="/" id="acoisado steamlogo">
+          <img src="/steam.png" id="steamlogo"></img>
         </a>
       </span>
       <nav id="flexcaixa">

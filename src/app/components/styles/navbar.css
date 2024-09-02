@@ -21,11 +21,27 @@ nav > * > a {
   text-decoration: none;
   color: white;
   margin: 0 7px;
+  position: relative;
 }
 
-a:hover {
+nav > * > a:hover {
   color: #1a9fff;
-  text-decoration: underline #1a9fff 2.7px;
+  /* ?      tirei                        text-decoration: underline #1a9fff 2.7px;*/
+}
+nav > * >a::after{
+  content: "";
+        display: block;
+        width: 0;
+        height: 2px;
+        background-color: #1a9fff;
+        transition: width 0.35s;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+}
+
+nav > * > a:hover::after{
+  width: 100%;
 }
 
 a:hover + span {
