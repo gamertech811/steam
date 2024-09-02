@@ -4,7 +4,7 @@ gridnav {
   display: grid;
   grid-template-columns: 230px 1fr;
   background-color: #171d25;
-  padding: 33px 240px;
+  padding: 30px 240px;
 }
 
 nav {
@@ -28,19 +28,19 @@ nav > * > a:hover {
   color: #1a9fff;
   /* ?      tirei                        text-decoration: underline #1a9fff 2.7px;*/
 }
-nav > * >a::after{
+nav > * > a::after {
   content: "";
-        display: block;
-        width: 0;
-        height: 2px;
-        background-color: #1a9fff;
-        transition: width 0.35s;
-        position: absolute;
-        bottom: 0;
-        left: 0;
+  display: block;
+  width: 0;
+  height: 2px;
+  background-color: #1a9fff;
+  transition: width 0.35s;
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
 
-nav > * > a:hover::after{
+nav > * > a:hover::after {
   width: 100%;
 }
 
