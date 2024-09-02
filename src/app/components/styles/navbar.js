@@ -36,6 +36,21 @@ export default function NavBar() {
         <supor>
           <a href="/">SUPORTE</a>
         </supor>
+
+        <install id="containaire">
+          <gg>
+            <a href="https://cdn.akamai.steamstatic.com/client/installer/SteamSetup.exe">
+              <button id="inst">Instalar o Steam</button>
+            </a>
+            <a href="/" id="sessao">
+              Iniciar sessão
+            </a>
+            |
+            <span>
+              <a id="idioma">Idioma</a>
+            </span>
+          </gg>
+        </install>
       </nav>
     </gridnav>
   );
