@@ -1,58 +1,175 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
-
-gridnav{
-    display: grid;
-    grid-template-columns: 230px 1fr;
-    background-color: #171D25;
-    padding: 33px 220px;
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+gridnav {
+  display: grid;
+  grid-template-columns: 230px 1fr;
+  background-color: #171d25;
+  padding: 30px 240px;
 }
 
-nav{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
+nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
 }
-gridnav > h1{
-    margin: 0;
-    color: white;
+gridnav > h1 {
+  margin: 0;
+  color: white;
 }
-nav > * > a{
-    text-decoration: none;
-    color: white;
-    margin: 0 7px;
-}
-
-a:hover{
-    color: #1A9FFF;
-    text-decoration: underline #1A9FFF 2.7px;
+nav > * > a {
+  text-decoration: none;
+  color: white;
+  margin: 0 7px;
+  position: relative;
 }
 
-a:hover + span{
-    display: block!important;
+nav > * > a:hover {
+  color: #1a9fff;
+  /* ?      tirei                        text-decoration: underline #1a9fff 2.7px;*/
 }
-#hoverzinho{
-    position: absolute;
-    background-color: #3D4450;
-    width: 150px;
-    display: none;
-}
-#hoverzinho:hover{
-    display: block;
+nav > * > a::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background-color: #1a9fff;
+  transition: width 0.35s;
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
 
+nav > * > a:hover::after {
+  width: 100%;
+}
 
-.trecoco{
-    font-size: 0.9rem;
+a:hover + span {
+  display: block !important;
+}
+#hoverzinho {
+  position: absolute;
+  background-color: #3d4450;
+  width: 150px;
+  display: none;
+  z-index: 1;
+}
+#hoverzinho:hover {
+  display: block;
+}
+
+.trecoco {
+  font-size: 0.9rem;
+  cursor: pointer;
+  margin: 0;
+  padding: 10px 10px 10px 15px;
+}
+.trecoco:hover {
+  color: #3d4450;
+  background-color: white;
+}
+#flexcaixa {
+  display: flex;
+  justify-content: flex-start;
+}
+#inst {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 11px;
+  border: 0;
+  outline: 0;
+  background-color: #5c7e10;
+  color: white;
+  padding: 0px 9px 0px 35px;
+  height: 25px;
+  font-family: "Nunito", Sans-serif;
+  font-style: normal;
+}
+#inst {
+  display: inline-block;
+  padding-left: 35px;
+  padding-right: 9px;
+  background-position: 10px 5px;
+  background-image: url(https://store.akamai.steamstatic.com/public/shared/images/header/btn_header_installsteam_download.png?v=1);
+  background-repeat: no-repeat;
+  text-decoration: none;
+  color: #e5e4dc;
+  font-weight: normal;
+  font-family: "Motiva Sans", Sans-serif;
+  position: relative;
+}
+#inst:hover{cursor: pointer;color: white;background-color: #6C9018;}
+#containaire {
+  position: absolute;
+  right: 100px;
+  top: 6px;
+
+  line-height: 21px;
+  color: #b8b6b4;
+  font-size: 11px;
+  z-index: 101;
+  padding: 0 10px;
+  width: 350px;
+  overflow: hidden;
+  display: inline-block;
+}
+#sessao{
+  padding: 0 10px;
+  text-decoration: none;
+  color: white;
+  margin: 0;
+  cursor: pointer;
+  z-index: 101;
+  font-size: 11px;
+  font-family: "Nunito", Sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  color: #b8b6b4;
+  display: inline-block;
+  position: relative;
+}
+#sessao:hover{color: white;}
+#idioma{
+  position: relative;
+  cursor: pointer;
+  padding: 2.5px 10px;
+}
+#idioma{
+  padding-left: 5px;
+    padding-right: 18px;
+    background-image: url(https://store.akamai.steamstatic.com/public/shared/images/popups/btn_arrow_down_padded.png);
+    background-position: right center;
+    background-repeat: no-repeat;
     cursor: pointer;
-    margin: 0;
-    padding: 10px 10px 10px 15px;
 }
-.trecoco:hover{
-    color: #3D4450;
-    background-color: white;
+#idioma:hover{
+  color: white;
 }
-#flexcaixa{
-    display: flex;
-    justify-content: flex-start;
+#merda{
+  cursor: pointer;
+  margin: 0;
+  padding: 0;
+  opacity: 0;
+  height: 0;
+  background-color: #3D4450;
+  display: block;
+  overflow: hidden;
+}
+.pau {
+  background-color: #3D4450;
+  margin: 0;
+  padding: 5px 20px;
+  font-size: 0.8rem;
+}
+#padd{
+  padding: 5px 20px 5px 20px;
+}
+.pau:hover{
+  background-color: white;
+  color: #3D4450;
+}
+/*    era pra funcionar OBS: #merda tem q tar com display none ou outra coisa
+*/#idioma:active + #merda, #merda:hover{
+  display: block;
+  opacity: 100%;
+  height: 100%;
 }
