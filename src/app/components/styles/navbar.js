@@ -45,9 +45,12 @@ export default function NavBar() {
             <a href="/" id="sessao">
               Iniciar sessão
             </a>
-            |
-            <span>
-              <a id="idioma">Idioma</a>
+            |<a id="idioma">Idioma</a>
+            <span id="merda">
+              <p className="pau">pt-BR</p>
+              <p className="pau">En</p>
+              <p className="pau">Ge</p>
+              <p className="pau" id="padd">xingling</p>
             </span>
           </gg>
         </install>
