@@ -34,8 +34,9 @@ export default function Home() {
         <span id="spancado">
           <input type="text" id="pesquisar" placeholder="procurar"></input>
           <img src="/semmouse.png" id="pesq"></img>
-        </span>
+        </span>        
       </div>
+      
     </div>
   );
 }
