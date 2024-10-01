@@ -52,7 +52,7 @@ a:hover + span {
   background-color: #3d4450;
   width: 150px;
   display: none;
-  z-index: 1;
+  z-index: 9999999999999999999999999;
 }
 #hoverzinho:hover {
   display: block;
@@ -63,6 +63,7 @@ a:hover + span {
   cursor: pointer;
   margin: 0;
   padding: 10px 10px 10px 15px;
+  z-index: 999999999999999999999999;
 }
 .trecoco:hover {
   color: #3d4450;
@@ -179,3 +180,4 @@ a:hover + span {
   opacity: 100%;
   height: 100%;
 }
+
